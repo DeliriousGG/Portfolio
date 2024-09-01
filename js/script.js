@@ -42,7 +42,7 @@ window.onscroll = () => {
         delay: 200
     });
 
-    ScrollReveal().reveal('.home-content, .about-content, .heading', { origin: 'top' });
+    ScrollReveal().reveal('.home-content, .about-content, .heading, .portfolio-text, .tab-bar', { origin: 'top' });
     ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
     ScrollReveal().reveal('.about-img', { origin: 'left' });
 
@@ -54,3 +54,95 @@ window.onscroll = () => {
         backDelay: 1000,
         loop: true
     });
+
+    // tab-nav
+    function filterProjects(category) {
+        var projects = document.querySelectorAll('.portfolio-box');
+        projects.forEach(function (project) {
+            project.style.display = 'none';
+        });
+        
+    var filteredProjects = document.querySelectorAll('.portfolio-box.' + category);
+    filteredProjects.forEach(function (project) {
+        project.style.display = 'block';
+        project.style.opacity = 1;
+        
+    });
+
+    // Update the active tab
+    var tabs = document.querySelectorAll('.tab-button');
+    tabs.forEach(function (tab) {
+        tab.classList.remove('active');
+    });
+
+    var activeTab = document.querySelector('.tab-button[onclick="filterProjects(\'' + category + '\')"]');
+    activeTab.classList.add('active');
+}
+
+    // Set default category and activate corresponding tab
+    var defaultCategory = 'video-edit';
+    filterProjects(defaultCategory);
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = {
+        fullname: document.getElementById('fullname').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+    };
+
+    fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response from the server
+        console.log(data);
+        // You can add additional logic here based on the server response
+    })
+    .catch(error => {
+        // Handle any errors that occurred during the fetch
+        console.error('Error:', error);
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+    
+        const formData = {
+            fullname: document.getElementById('fullname').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value,
+        };
+    
+        fetch('/api/sendEmail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle the response from the server
+            console.log(data);
+            // You can add additional logic here based on the server response
+        })
+        .catch(error => {
+            // Handle any errors that occurred during the fetch
+            console.error('Error:', error);
+        });
+    });
+
+});
+
+    
+

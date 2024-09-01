@@ -13,13 +13,15 @@
 
             <!-- css -->
             <link rel="stylesheet" href="css/style.css">
+
+            <link rel="icon" href="img/favicon.png" type="img/png">
     </head>
 
     <body>
         
         <!-- header koh -->
         <header class="header">
-            <a href="#" class="logo">Portfolio</a>
+            <a href="# " class="logo">JB</a>
 
             <i class='bx bx-menu icon-menu'  id="menu-icon"></i>
 
@@ -84,7 +86,7 @@
                     We specialize in creating custom websites tailored to your unique needs, 
                     ensuring a seamless user experience and optimal performance.
                 </p>
-                <a href="#services" class="btn">Read More</a>
+                <a href="#portfolio" class="btn">See More</a>
             </div>
 
             <div class="services-box">
@@ -94,7 +96,7 @@
                     Create engaging visuals for various social platforms, 
                     ensuring that your brand stays consistent and attracts attention across the digital landscape.
                 </p>
-                <a href="#services" class="btn">Read More</a>
+                <a href="#portfolio" class="btn">See More</a>
             </div>
 
             <div class="services-box">
@@ -104,7 +106,7 @@
                     Experience seamless video production – from concept to precise editing. 
                     Whether it's promotional or informational, we craft compelling narratives.
                 </p>
-                <a href="#services" class="btn">Read More</a>
+                <a href="#portfolio" class="btn">See More</a>
             </div>
         </div>
         </section>
@@ -113,80 +115,157 @@
 
         <section class="portfolio" id="portfolio">
             <h2 class="heading">Latest <span>Projects</span></h2>
-
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <img src="img/portfolio1.png" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Video Edit</h4>
-                        <p>Short Form Content</p>
-                        <a href="https://drive.google.com/file/d/1mMyaaq94TclxyKnxDAjqlVvq5cjzS_vG/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio2.jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Video Edit</h4>
-                        <p>Video Ad</p>
-                        <a href="https://drive.google.com/file/d/1_husHWWcnf6b4kjQzABsqnv8zlpwnY5a/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio3.jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Video Edit</h4>
-                        <p>Car B-roll</p>
-                        <a href="https://drive.google.com/file/d/1n1ndEjopRG6yXG5hZh1OWlYU68H5VE-n/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio4.jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Video Edit</h4>
-                        <p>Voiceover Edit</p>
-                        <a href="https://drive.google.com/file/d/18CTXShFk49ekey5GbEImll1HPzpZ3UWZ/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio5.jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Coming soon</h4>
-                        <p>Nothing to see here yet...</p>
-                        <a href=""><i class='bx bx-link-external' ></i></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio6.jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Coming soon</h4>
-                        <p>Nothing to see here yet...</p>
-                        <a href=""><i class='bx bx-link-external' ></i></a>
-                    </div>
-                </div>
+            <div class="portfolio-text">
+                <h3>
+                    If you want to look at all of my works, you can check them
+                    <a href="https://drive.google.com/drive/folders/1PMjBoYux63ttnnwHfY33JiLM37h0YlhF?usp=sharing" target="_blank" style="color: #0ef;">here</a>
+                </h3>
             </div>
+            <!-- Tab Bar -->
+            <div class="tab-bar">
+                <button class="tab-button active" onclick="filterProjects('video-edit')">Video Edit</button>
+                <button class="tab-button " onclick="filterProjects('web-development')">Website Projects</button>
+                <button class="tab-button" onclick="filterProjects('graphic-design')">Graphic Design</button>
+            </div>
+
+                <div class="portfolio-container">
+                    <div class="portfolio-box video-edit">
+                        <img src="img/Video Samples/video1.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Short Form Content</h4>
+                            <p>Creating engaging short-form videos that capture attention and tell stories in seconds.</p>
+                            <a href="https://drive.google.com/file/d/1mMyaaq94TclxyKnxDAjqlVvq5cjzS_vG/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box video-edit">
+                        <img src="img/Video Samples/video2.jpg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Video Advertisement</h4>
+                            <p>Crafting impactful video ads that captivate and convey messages swiftly.</p>
+                            <a href="https://drive.google.com/file/d/1_husHWWcnf6b4kjQzABsqnv8zlpwnY5a/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box video-edit">
+                        <img src="img/Video Samples/video3.jpg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Car B-roll</h4>
+                            <p>Producing sleek car b-rolls that showcase vehicles in dynamic and captivating ways.</p>
+                            <a href="https://drive.google.com/file/d/1n1ndEjopRG6yXG5hZh1OWlYU68H5VE-n/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box video-edit">
+                        <img src="img/Video Samples/video4.jpg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Voiceover Edit</h4>
+                            <p>Enhancing videos with professional voiceover edits for clear and compelling narratives.</p>
+                            <a href="https://drive.google.com/file/d/18CTXShFk49ekey5GbEImll1HPzpZ3UWZ/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box video-edit">
+                        <img src="img/Video Samples/video5.jpg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Long Form Video</h4>
+                            <p>Creating in-depth long-form content that captivates and retains audience attention.</p>
+                            <a href="https://drive.google.com/file/d/1anKwc8zeYPYvvA-0-RsmKfxcSmcho5yo/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box video-edit">
+                        <img src="img/Video Samples/video6.jpg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Reel</h4>
+                            <p>Crafting dynamic reels that highlight key moments and captivate viewers instantly.</p>
+                            <a href="https://drive.google.com/file/d/12MLX0ljRCjBlgprdzvcGoNWkyMYz6_Fr/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-box web-development">
+                        <img src="img/Web Dev/web1.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Web Development</h4>
+                            <p>The Penn Digitals</p>
+                            <a href="https://the-penn-digitals.vercel.app" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box graphic-design">
+                        <img src="img/Graphic Design/graph1.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Graphic Design</h4>
+                            <p>Content Calendar</p>
+                            <a href="https://drive.google.com/file/d/1PU9X5m0yeb6TDdVjv2KUcXHBH7oq4rQ3/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box graphic-design">
+                        <img src="img/Graphic Design/graph2.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Graphic Design</h4>
+                            <p>Social Media Promotion Ad</p>
+                            <a href="https://drive.google.com/file/d/1p-dxUi1oJXBOVfu52ZCLcvcCQFr0v_vU/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box graphic-design">
+                        <img src="img/Graphic Design/graph3.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Graphic Design</h4>
+                            <p>Social Media Promotion Ad</p>
+                            <a href="https://drive.google.com/file/d/10R3890KSwzSTx-4ND1zMyMAJovgIruyH/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box graphic-design">
+                        <img src="img/Graphic Design/graph4.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Graphic Design</h4>
+                            <p>Inspirational Quotes</p>
+                            <a href="https://drive.google.com/file/d/18BKSAs-JTAuSeSX7fWE19Ms3nCuRhdsn/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box graphic-design">
+                        <img src="img/Graphic Design/graph5.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Graphic Design</h4>
+                            <p>Inspirational Message</p>
+                            <a href="https://drive.google.com/file/d/1iQrbMPnhSnEm-IjAo20b7pK3rwOYuWU4/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box graphic-design">
+                        <img src="img/Graphic Design/graph6.png" alt="">    
+                        <div class="portfolio-layer">
+                            <h4>Graphic Design</h4>
+                            <p>Tips and Tricks</p>
+                            <a href="https://drive.google.com/file/d/1IR7966PiPqpNMf2znj_LWov5_3QUB0qM/view?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
         </section>
 
         <!-- contact section i2 -->
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
 
-            <form action="#">
+            <form id="contactForm">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Full Name" id="fullname" required>
+                    <input type="email" placeholder="Email Address" id="email" required>
+                    <input type="number" placeholder="Mobile Number" id="phone" required>
+                    <input type="text" placeholder="Email Subject" id="subject" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
                 </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </form>
+
         </section>
 
         <!-- footer koh -->
@@ -208,7 +287,6 @@
 
         <!-- javascript koh -->
         <script src="js/script.js"></script>
-
 
     </body>
     </html>
